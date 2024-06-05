@@ -9,7 +9,7 @@ const Page = (props) => {
     const [found, setFound] = React.useState(false)
 
     React.useEffect(()=>{
-        if (props.params.id >= data.length){
+        if (props.params.id > data.length){
             return 
         }
         setInfo(data[props.params.id-1])
