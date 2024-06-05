@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 //Generate metadata w title and description 
 export async function generateMetadata({ params }){
     const id = params.id;
-    if (id >= data.length){
+    if (id > data.length){
         return {
             title: "Blog",
             description: "Fake data-blogs"
